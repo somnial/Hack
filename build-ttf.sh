@@ -110,21 +110,21 @@ fi
 
 # build regular set
 
-if ! fontmake -u "source/Hack-Regular.ufo" -o ttf
+if ! fontmake -u "source/Hack-Regular.ufo" -o ttf --keep-overlaps
 	then
 	    echo "Unable to build the Hack-Regular variant set.  Build canceled." 1>&2
 	    exit 1
 fi
 
 # build bold set
-if ! fontmake -u "source/Hack-Bold.ufo" -o ttf
+if ! fontmake -u "source/Hack-Bold.ufo" -o ttf --keep-overlaps
 	then
 	    echo "Unable to build the Hack-Bold variant set.  Build canceled." 1>&2
 	    exit 1
 fi
 
 # build italic set
-if ! fontmake -u "source/Hack-Italic.ufo" -o ttf
+if ! fontmake -u "source/Hack-Italic.ufo" -o ttf --keep-overlaps
 	then
 	    echo "Unable to build the Hack-Italic variant set.  Build canceled." 1>&2
 	    exit 1
@@ -132,7 +132,7 @@ fi
 
 # build bold italic set
 
-if ! fontmake -u "source/Hack-BoldItalic.ufo" -o ttf
+if ! fontmake -u "source/Hack-BoldItalic.ufo" -o ttf --keep-overlaps
 	then
 	    echo "Unable to build the Hack-BoldItalic variant set.  Build canceled." 1>&2
 	    exit 1
